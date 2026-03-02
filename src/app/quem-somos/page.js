@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "../page.module.css";
 
-export default function AboutUs() {
+export default function QuemSomos() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
