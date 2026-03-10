@@ -1,6 +1,9 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Sidebar from "@/components/Sidebar";
+import CardUser from "@/components/cardUser";
+
+import Image from "next/image";
 
 const nome = "mundo";
 
@@ -9,10 +12,34 @@ export default function Home() {
     <div>
       <Header />
 
-      <main className="flex bg-gray-400 text-white">
+      <main className="flex bg-gray-50 text-white">
         <Sidebar />
-        <div>
-          <h1 className="text-2xl font-bold p-2">Olá, {nome}!</h1>
+        <div className="p-8">
+          <div className="grid grid-cols-2 gap-6">
+            <CardUser
+              name="Hyan Ferreira"
+              email="hyanferreira.dev@gmail.com"
+              avatar="https://avatars.githubusercontent.com/u/114369661?v=4"
+            />
+
+            <CardUser
+              name="Hyan Ferreira"
+              email="hyanferreira.dev@gmail.com"
+              avatar="https://avatars.githubusercontent.com/u/114369661?v=4"
+            />
+
+            <CardUser
+              name="Hyan Ferreira"
+              email="hyanferreira.dev@gmail.com"
+              avatar="https://avatars.githubusercontent.com/u/114369661?v=4"
+            />
+            
+            <CardUser
+              name="Hyan Ferreira"
+              email="hyanferreira.dev@gmail.com"
+              avatar="https://avatars.githubusercontent.com/u/114369661?v=4"
+            />
+          </div>
         </div>
       </main>
 

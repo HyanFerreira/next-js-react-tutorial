@@ -7,10 +7,10 @@ export default function QuemSomos() {
     <div>
       <Header />
 
-      <main className="flex bg-gray-400 text-white">
+      <main className="flex bg-gray-50 text-white">
         <Sidebar />
         <div>
-          <h1 className="text-2xl font-bold p-2">Quem somos</h1>
+          <h1 className="text-2xl font-bold p-8 text-gray-900">Quem somos</h1>
         </div>
       </main>
 
