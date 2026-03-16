@@ -21,24 +21,6 @@ export default function Home() {
               email="hyanferreira.dev@gmail.com"
               avatar="https://avatars.githubusercontent.com/u/114369661?v=4"
             />
-
-            <CardUser
-              name="Hyan Ferreira"
-              email="hyanferreira.dev@gmail.com"
-              avatar="https://avatars.githubusercontent.com/u/114369661?v=4"
-            />
-
-            <CardUser
-              name="Hyan Ferreira"
-              email="hyanferreira.dev@gmail.com"
-              avatar="https://avatars.githubusercontent.com/u/114369661?v=4"
-            />
-            
-            <CardUser
-              name="Hyan Ferreira"
-              email="hyanferreira.dev@gmail.com"
-              avatar="https://avatars.githubusercontent.com/u/114369661?v=4"
-            />
           </div>
         </div>
       </main>

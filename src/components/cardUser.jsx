@@ -8,7 +8,7 @@ import { FaUser } from "react-icons/fa";
 export default function cardUser(props) {
   return (
     <div className="bg-gray-900 w-96 flex gap-4 p-4 rounded-lg">
-      <div className="bg-white rounded-full w-27 h-27">
+      <div className="bg-white rounded-full w-27 h-27 p-0.5">
         <Image
           src={props.avatar}
           width={108}
