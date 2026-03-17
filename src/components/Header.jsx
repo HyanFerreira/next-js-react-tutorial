@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import { FaHome,FaUsers } from "react-icons/fa";
+import { FaCartShopping } from "react-icons/fa6";
 
 export default function Header() {
   return (
@@ -19,6 +20,15 @@ export default function Header() {
               >
                 <FaHome className="size-6" />
                 Início
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="hover:bg-white hover:text-gray-900 font-bold px-3 py-1.5 rounded-md transition flex items-center justify-center gap-2"
+                href="/produtos"
+              >
+                <FaCartShopping className="size-6" />
+                Produtos
               </Link>
             </li>
             <li>

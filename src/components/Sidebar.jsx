@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import { FaHome, FaUsers } from "react-icons/fa";
+import { FaCartShopping } from "react-icons/fa6";
 
 export default function Sidebar() {
   return (
@@ -13,6 +14,15 @@ export default function Sidebar() {
           >
             <FaHome className="size-6" />
             Início
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="/produtos"
+            className="px-3 py-2 rounded hover:bg-gray-500 transition flex items-center gap-2"
+          >
+            <FaCartShopping className="size-6" />
+            Produtos
           </Link>
         </li>
         <li>

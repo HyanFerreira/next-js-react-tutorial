@@ -1,7 +1,7 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Sidebar from "@/components/Sidebar";
-import CardUser from "@/components/cardUser";
+import CardUser from "@/components/CardUser";
 
 import Image from "next/image";
 
