@@ -1,13 +1,31 @@
+"use client";
+
+import { useEffect, useState } from "react";
+import CardUser from "@/components/CardUser";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Sidebar from "@/components/Sidebar";
-import CardUser from "@/components/CardUser";
-
-import Image from "next/image";
-
-const nome = "mundo";
 
 export default function Home() {
+  const [isLoading, setIsLoading] = useState(true);
+  const [users, setUsers] = useState([]);
+
+  useEffect(() => {
+    const getUsers = async () => {
+      const response = await fetch("http://localhost:3333/user");
+      if (response.ok) {
+        const data = await response.json();
+        console.log(data);
+        setUsers(data.users);
+      } else {
+        console.error("Falha ao realizar fetch users");
+      }
+    };
+
+    getUsers();
+    setIsLoading(false);
+  }, []);
+
   return (
     <div>
       <Header />
@@ -16,11 +34,19 @@ export default function Home() {
         <Sidebar />
         <div className="p-8">
           <div className="grid grid-cols-2 gap-6">
-            <CardUser
-              name="Hyan Ferreira"
-              email="hyanferreira.dev@gmail.com"
-              avatar="https://avatars.githubusercontent.com/u/114369661?v=4"
-            />
+            {isLoading ? (
+              <p>Carregando...</p>
+            ) : (
+              users.map((user) => (
+                <CardUser
+                  key={user.id}
+                  id={user.id}
+                  name={user.name}
+                  email={user.email}
+                  avatar={user.avatar}
+                />
+              ))
+            )}
           </div>
         </div>
       </main>

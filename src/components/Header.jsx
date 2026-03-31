@@ -71,12 +71,12 @@ export default function Header() {
           >
             Entrar
           </button>
-          <button
-            type="button"
+          <Link
+            href="/singup"
             className="rounded-md px-2 py-1.5 bg-white cursor-pointer text-gray-900 font-bold"
           >
             Cadastrar
-          </button>
+          </Link>
         </div>
       </nav>
     </header>
